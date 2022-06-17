@@ -1,29 +1,29 @@
 {
   "development": {
-  "url" : "postgres://postgres:password@localhost:5432/iLrn",
-  "username": "postgres",
-  "password": "password",
-  "database": "iLrn",
+  "url" : "mysql://root:root@localhost:8889/vestashop",
+  "username": "root",
+  "password": "root",
+  "database": "vestashop",
   "host": "127.0.0.1",
-  "port": 5432,
-  "dialect": "postgres"
+  "port": 8889,
+  "dialect": "mysql"
   },
   "test": {
-  "url" : "postgres://postgres:password@localhost:5432/iLrn",
-  "username": "postgres",
-  "password": "password",
-  "database": "iLrn",
+  "url" : "mysql://root:root@localhost:8889/vestashop",
+  "username": "root",
+  "password": "root",
+  "database": "vestashop",
   "host": "127.0.0.1",
-  "port": 5432,
-  "dialect": "postgres"
+  "port": 8889,
+  "dialect": "mysql"
   },
   "production": {
-  "url" : "postgres://postgres:password@localhost:5432/iLrn",
-  "username": "postgres",
-  "password": "password",
-  "database": "iLrn",
+  "url" : "mysql://root:root@localhost:8889/vestashop",
+  "username": "root",
+  "password": "root",
+  "database": "vestashop",
   "host": "127.0.0.1",
-  "port": 5432,
-   "dialect": "postgres"
+  "port": 8889,
+   "dialect": "mysql"
   }
 }
