@@ -1,0 +1,65 @@
+2022-06-15 21:40:11 info: the server started listining on port port 3000
+2022-06-15 21:40:22 info: a request has been made with the following uuid [4e6006cd-604a-43ea-abe5-c2109ffc09cb] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:42:00 info: a request has been made with the following uuid [8fac7b31-c3ca-4226-8a49-5009d64422a4] /signUp Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:42:30 info: a request has been made with the following uuid [7b6a0514-de09-4c3f-94c5-b6d8a23e283b] /1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:42:40 info: a request has been made with the following uuid [62881949-a981-41f5-bcbf-382109b73414] /profile Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:45:19 info: a request has been made with the following uuid [6efbfaa2-4d1f-4764-8f88-895b98ff6212] /api/v1/profile Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:45:25 info: a request has been made with the following uuid [00d9b267-3dad-48a4-990c-f607294a0037] /api/v1/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:45:40 info: a request has been made with the following uuid [7388aab0-a152-429d-8928-a54e650b3077] /api/v1/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:45:41 info: a request has been made with the following uuid [f1d2feab-0598-4340-b771-a5a9a21c6f7e] /favicon.ico Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:47:39 info: stopping the server
+2022-06-15 21:47:43 info: the server started listining on port port 3000
+2022-06-15 21:47:46 info: a request has been made with the following uuid [4746cec9-80e9-414a-afeb-597f36ffa022] /api/v1/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:48:06 info: a request has been made with the following uuid [50dea929-e0fb-494e-b31e-15a442722f86] /api/v1/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:49:29 info: a request has been made with the following uuid [6ec2c33c-b642-4761-bcc0-bf9c3ee88607] /api/v1/users/1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:52:59 info: stopping the server
+2022-06-15 21:53:02 info: the server started listining on port port 3000
+2022-06-15 21:53:15 info: a request has been made with the following uuid [98d7f6b5-5c4d-4e4a-827d-f82afcb6a845] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:53:15 info: a request has been made and proccessed successfully at: Wed Jun 15 2022 21:53:15 GMT+0100 (GMT+01:00)
+2022-06-15 21:53:28 info: a request has been made with the following uuid [825a2f8a-fb1a-47c7-b192-5ea33e37b5b9] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 21:53:28 info: a request has been made and proccessed successfully at: Wed Jun 15 2022 21:53:28 GMT+0100 (GMT+01:00)
+2022-06-15 22:48:36 info: stopping the server
+2022-06-15 23:00:59 info: the server started listining on port port 3000
+2022-06-15 23:01:07 info: a request has been made with the following uuid [a446c0c9-725e-4289-b613-a03acb9b87e6] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:01:39 info: stopping the server
+2022-06-15 23:01:41 info: the server started listining on port port 3000
+2022-06-15 23:01:46 info: a request has been made with the following uuid [d4fb5997-ef84-404e-858d-d196376aa3e9] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:01:50 info: a request has been made with the following uuid [48deb94c-d265-456f-9b91-d9a6c573a8cd] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:05:39 info: stopping the server
+2022-06-15 23:07:46 info: the server started listining on port port 3000
+2022-06-15 23:07:47 info: a request has been made with the following uuid [0abec6fe-8fe6-4b7b-9217-43a3105772bd] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:07:59 info: a request has been made with the following uuid [84237874-f15f-4c10-93d2-f56aa05a8f7c] /api/v1/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:08:55 info: a request has been made with the following uuid [b56f61ee-eb60-415c-8849-8d29c4c6621f] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:10:04 info: stopping the server
+2022-06-15 23:10:07 info: the server started listining on port port 3000
+2022-06-15 23:10:09 info: a request has been made with the following uuid [30ad6431-fbd9-45b4-a9cf-823261a836ea] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:13:19 info: a request has been made with the following uuid [19915269-09e1-4ec5-93e7-89d9ffff1549] /something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:15:15 info: stopping the server
+2022-06-15 23:16:11 info: the server started listining on port port 3000
+2022-06-15 23:16:24 info: a request has been made with the following uuid [0f3c4034-9d42-4954-9122-395b7fe890ab] /something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:18:01 info: a request has been made with the following uuid [33280cc7-14c6-4531-8be3-d3039e6d27af] /something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:18:05 info: stopping the server
+2022-06-15 23:18:08 info: the server started listining on port port 3000
+2022-06-15 23:18:10 info: a request has been made with the following uuid [096b33ed-e5fa-459d-b9f8-b202a8e12dbc] /something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:18:41 info: a request has been made with the following uuid [d5842185-6b24-48a5-b697-5e0c7874fe5a] /something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:20:03 info: stopping the server
+2022-06-15 23:20:05 info: the server started listining on port port 3000
+2022-06-15 23:20:09 info: a request has been made with the following uuid [e6a163c4-cf00-4215-b69f-a600fa871118] /something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:20:21 info: stopping the server
+2022-06-15 23:20:23 info: the server started listining on port port 3000
+2022-06-15 23:20:24 info: a request has been made with the following uuid [1c753e64-3e07-4687-bae1-0635654eca94] /something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:22:32 info: stopping the server
+2022-06-15 23:22:34 info: the server started listining on port port 3000
+2022-06-15 23:22:41 info: a request has been made with the following uuid [5126edc8-ae8f-4222-9c18-8f1bf97d6d8f] /something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:22:44 info: a request has been made with the following uuid [06db27bf-44c4-41e1-b0d0-4e3b767853b5] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:25:27 info: stopping the server
+2022-06-15 23:25:30 info: the server started listining on port port 3000
+2022-06-15 23:25:32 info: a request has been made with the following uuid [9c801de5-8e15-468e-b33e-3415a914dcc1] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:51:34 info: a request has been made with the following uuid [396d41ed-7f2e-4a64-a8c4-31c10065845e] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:51:40 info: stopping the server
+2022-06-15 23:51:44 info: the server started listining on port port 3000
+2022-06-15 23:56:19 info: stopping the server
+2022-06-15 23:56:48 info: the server started listining on port port 3000
+2022-06-15 23:56:54 info: a request has been made with the following uuid [72633c7a-187d-4496-93eb-37cf23b215d7] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-15 23:59:33 info: stopping the server
+2022-06-15 23:59:37 info: the server started listining on port port 3000

@@ -1,0 +1,40 @@
+2022-06-16 00:01:10 info: the server started listining on port port 3000
+2022-06-16 00:02:39 info: stopping the server
+2022-06-16 00:03:20 info: the server started listining on port port 3000
+2022-06-16 00:04:19 info: the server started listining on port port 3000
+2022-06-16 00:04:32 info: a request has been made with the following uuid [9adf5992-cd85-4abf-b931-8537ad7a6a3f] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:04:32 error: the url you are trying to reach is not hosted on our server
+2022-06-16 00:07:11 info: stopping the server
+2022-06-16 00:07:14 info: the server started listining on port port 4000
+2022-06-16 00:07:14 info: a request has been made with the following uuid [22f81095-6e31-4328-8670-c36bb2de5544] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0 {}
+2022-06-16 00:07:14 error: the url you are trying to reach is not hosted on our server
+2022-06-16 00:07:21 info: a request has been made with the following uuid [7b07f6d3-4e26-4696-a91c-7590f327567b] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0 {}
+2022-06-16 00:07:21 error: the url you are trying to reach is not hosted on our server
+2022-06-16 00:07:28 info: a request has been made with the following uuid [1afc5715-0340-426f-ae84-abb0b038fab2] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0 {}
+2022-06-16 00:07:28 error: the url you are trying to reach is not hosted on our server
+2022-06-16 00:07:42 info: a request has been made with the following uuid [04b08813-101c-4326-a11c-afbef38f6c68] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:08:05 info: a request has been made with the following uuid [81f58aae-018e-47a0-9056-20a9e7549bc0] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:08:09 info: a request has been made with the following uuid [b5fd098c-ff93-4089-aa01-8ffbf3e3dec2] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:08:42 info: stopping the server
+2022-06-16 00:08:45 info: the server started listining on port port 4000
+2022-06-16 00:08:45 info: a request has been made with the following uuid [879d5658-f249-4b82-8035-64bb17988477] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0 {}
+2022-06-16 00:08:45 error: the url you are trying to reach is not hosted on our server
+2022-06-16 00:08:53 info: a request has been made with the following uuid [3951c02a-eaee-4855-92ec-f2a546d0bb36] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0 {}
+2022-06-16 00:08:53 error: the url you are trying to reach is not hosted on our server
+2022-06-16 00:08:58 info: stopping the server
+2022-06-16 00:09:00 info: the server started listining on port port 4000
+2022-06-16 00:09:00 info: a request has been made with the following uuid [3cea78a2-60fc-46f6-a5b0-3dd8b8e55b95] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0 {}
+2022-06-16 00:09:00 error: the url you are trying to reach is not hosted on our server
+2022-06-16 00:09:06 info: a request has been made with the following uuid [d43cfd59-ac14-48a2-94a2-f11008c25d5a] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:09:14 info: a request has been made with the following uuid [17e1f9e2-0c78-4c96-883e-1ce82cb5f296] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:09:19 info: stopping the server
+2022-06-16 00:09:22 info: the server started listining on port port 4000
+2022-06-16 00:09:22 info: a request has been made with the following uuid [0e685086-0198-4129-84c6-529f06e681ee] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0 {}
+2022-06-16 00:09:22 error: the url you are trying to reach is not hosted on our server
+2022-06-16 00:09:23 info: a request has been made with the following uuid [3c8fbda0-c956-49bf-a6c7-d86dbe43bd31] / Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0 {}
+2022-06-16 00:09:23 error: the url you are trying to reach is not hosted on our server
+2022-06-16 00:09:25 info: a request has been made with the following uuid [5281354e-743e-4aca-9754-f0a2cab4c75a] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:09:26 info: a request has been made with the following uuid [128a4a19-ce42-427f-9823-fdf8bbb4ef5f] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:10:34 info: a request has been made with the following uuid [c47bff36-dcba-42c0-8a28-695b6000acb2] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:10:52 info: a request has been made with the following uuid [0349cd23-e15a-46e8-8fa7-2769d16f85ab] /api/v1/users/something Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 {}
+2022-06-16 00:11:24 info: stopping the server
