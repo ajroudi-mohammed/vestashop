@@ -1,15 +1,17 @@
 
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faAngleUp, faChartArea, faChartBar, faChartLine, faFlagUsa, faFolderOpen, faGlobeEurope, faPaperclip, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faArrowDown, faArrowUp, faEllipsisH, faEdit, faTrashAlt, faEye, faAngleUp, faChartArea, faChartBar, faChartLine, faFlagUsa, faFolderOpen, faGlobeEurope, faPaperclip, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { faAngular, faBootstrap, faReact, faVuejs } from "@fortawesome/free-brands-svg-icons";
-import { Col, Row, Card, Image, Button, ListGroup, ProgressBar } from '@themesberg/react-bootstrap';
+import { Nav, Card, Button, Table, Dropdown, Pagination, ButtonGroup, Col, Row, Image, ListGroup, ProgressBar } from '@themesberg/react-bootstrap';
 import { CircleChart, BarChart, SalesValueChart, SalesValueChartphone } from "./Charts";
-
 import Profile1 from "../assets/img/team/profile-picture-1.jpg";
 import ProfileCover from "../assets/img/profile-cover.jpg";
-
+import transactions from "../data/transactions";
+import { pageVisits } from "../data/tables";
+import { Link } from 'react-router-dom';
 import teamMembers from "../data/teamMembers";
+import { Routes } from "../routes";
 
 
 export const ProfileCardWidget = () => {
@@ -71,7 +73,7 @@ export const CounterWidget = (props) => {
     <Card border="light" className="shadow-sm">
       <Card.Body>
         <Row className="d-block d-xl-flex align-items-center">
-          <Col xl={5} className="text-xl-center d-flex align-items-center justify-content-xl-center mb-3 mb-xl-0">
+          <Col xl={4} className="text-xl-center d-flex align-items-center justify-content-xl-center mb-3 mb-xl-0">
             <div className={`icon icon-shape icon-md icon-${iconColor} rounded me-4 me-sm-0`}>
               <FontAwesomeIcon icon={icon} />
             </div>
@@ -80,7 +82,7 @@ export const CounterWidget = (props) => {
               <h3 className="mb-1">{title}</h3>
             </div>
           </Col>
-          <Col xs={12} xl={7} className="px-xl-0">
+          <Col xs={12} xl={8} className="px-xl-0">
             <div className="d-none d-sm-block">
               <h5>{category}</h5>
               <h3 className="mb-1">{title}</h3>
@@ -107,16 +109,16 @@ export const CircleChartWidget = (props) => {
     <Card border="light" className="shadow-sm">
       <Card.Body>
         <Row className="d-block d-xl-flex align-items-center">
-          <Col xs={12} xl={5} className="text-xl-center d-flex align-items-center justify-content-xl-center mb-3 mb-xl-0">
+          <Col xs={12} xl={4} className="text-xl-center d-flex align-items-center justify-content-xl-center mb-3 mb-xl-0">
             <CircleChart series={series} />
           </Col>
-          <Col xs={12} xl={7} className="px-xl-0">
+          <Col xs={12} xl={8} className="px-xl-0">
             <h5 className="mb-3">{title}</h5>
 
             {data.map(d => (
               <h6 key={`circle-element-${d.id}`} className="fw-normal text-gray">
                 <FontAwesomeIcon icon={d.icon} className={`icon icon-xs text-${d.color} w-20 me-1`} />
-                {` ${d.label} `}{`${d.value}%`}
+                {` ${d.label} `}{`${d.value}`}
               </h6>
             ))}
           </Col>
@@ -396,6 +398,163 @@ export const AcquisitionWidget = () => {
           </div>
         </div>
       </Card.Body>
+    </Card>
+  );
+};
+
+
+export const LastOrders2 = () => {
+  const totalTransactions = transactions.length;
+
+  const TableRow = (props) => {
+    const { invoiceNumber, subscription, price, issueDate, dueDate, status } = props;
+    const statusVariant = status === "Paid" ? "success"
+      : status === "Due" ? "warning"
+        : status === "Canceled" ? "danger" : "primary";
+
+    return (
+      <tr>
+        <td>
+          <Card.Link as={Link} to={Routes.Invoice.path} className="fw-normal">
+            {invoiceNumber}
+          </Card.Link>
+        </td>
+        <td>
+          <span className="fw-normal">
+            {subscription}
+          </span>
+        </td>
+        <td>
+          <span className="fw-normal">
+            ${parseFloat(price).toFixed(2)}
+          </span>
+        </td>
+        <td>
+          <span className="fw-normal">
+            {dueDate}
+          </span>
+        </td>
+        
+        <td>
+          <span className={`fw-normal text-${statusVariant}`}>
+            {status}
+          </span>
+        </td>
+        <td>
+          <Dropdown as={ButtonGroup}>
+            <Dropdown.Toggle as={Button} split variant="link" className="text-dark m-0 p-0">
+              <span className="icon icon-sm">
+                <FontAwesomeIcon icon={faEllipsisH} className="icon-dark" />
+              </span>
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item>
+                <FontAwesomeIcon icon={faEye} className="me-2" /> View Details
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <FontAwesomeIcon icon={faEdit} className="me-2" /> Edit
+              </Dropdown.Item>
+              <Dropdown.Item className="text-danger">
+                <FontAwesomeIcon icon={faTrashAlt} className="me-2" /> Remove
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </td>
+      </tr>
+    );
+  };
+
+  return (
+    <Card border="light" className="table-wrapper table-responsive shadow-sm">
+      <Card.Body className="pt-0">
+        <Table hover className="user-table align-items-center">
+          <thead>
+            <tr>
+              <th className="border-bottom">#</th>
+              <th className="border-bottom">Customer name</th>
+              <th className="border-bottom">Total Tax excl.</th>
+              <th className="border-bottom">Date</th>
+              <th className="border-bottom">Status</th>
+              <th className="border-bottom">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {transactions.map(t => <TableRow key={`transaction-${t.invoiceNumber}`} {...t} />)}
+          </tbody>
+        </Table>
+        <Card.Footer className="px-3 border-0 d-lg-flex align-items-center justify-content-between">
+          <Nav>
+            <Pagination className="mb-2 mb-lg-0">
+              <Pagination.Prev>
+                Previous
+              </Pagination.Prev>
+              <Pagination.Item active>1</Pagination.Item>
+              <Pagination.Item>2</Pagination.Item>
+              <Pagination.Item>3</Pagination.Item>
+              <Pagination.Item>4</Pagination.Item>
+              <Pagination.Item>5</Pagination.Item>
+              <Pagination.Next>
+                Next
+              </Pagination.Next>
+            </Pagination>
+          </Nav>
+          <small className="fw-bold">
+            Showing <b>{totalTransactions}</b> out of <b>25</b> entries
+          </small>
+        </Card.Footer>
+      </Card.Body>
+    </Card>
+  );
+};
+
+export const LastOrders = () => {
+  const TableRow = (props) => {
+    const { pageName, views, returnValue, bounceRate } = props;
+    const bounceIcon = bounceRate < 0 ? faArrowDown : faArrowUp;
+    const bounceTxtColor = bounceRate < 0 ? "text-danger" : "text-success";
+
+    return (
+      <tr>
+        <th scope="row">{pageName}</th>
+        <td>{views}</td>
+        <td>
+          <span className="fw-normal">
+            ${parseFloat(returnValue).toFixed(2)}
+          </span>
+        </td>
+        <td>
+          <FontAwesomeIcon icon={bounceIcon} className={`${bounceTxtColor} me-3`} />
+          {Math.abs(bounceRate)}%
+        </td>
+      </tr>
+    );
+  };
+
+  return (
+    <Card border="light" className="shadow-sm">
+      <Card.Header>
+        <Row className="align-items-center">
+          <Col>
+            <h5>Last 10 orders</h5>
+          </Col>
+          <Col className="text-end">
+            <Button variant="secondary" size="sm">See all</Button>
+          </Col>
+        </Row>
+      </Card.Header>
+      <Table responsive className="align-items-center table-flush">
+        <thead className="thead-light">
+          <tr>
+            <th scope="col">Page name</th>
+            <th scope="col">Page Views</th>
+            <th scope="col">Page Value</th>
+            <th scope="col">Bounce rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          {pageVisits.map(pv => <TableRow key={`page-visit-${pv.id}`} {...pv} />)}
+        </tbody>
+      </Table>
     </Card>
   );
 };

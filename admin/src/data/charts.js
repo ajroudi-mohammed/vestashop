@@ -1,10 +1,9 @@
 
 import { faDesktop, faMobileAlt, faTabletAlt } from '@fortawesome/free-solid-svg-icons';
 
-const trafficShares = [
-    { id: 1, label: "Desktop", value: 60, color: "secondary", icon: faDesktop },
-    { id: 2, label: "Mobile Web", value: 30, color: "primary", icon: faMobileAlt },
-    { id: 3, label: "Tablet Web", value: 10, color: "tertiary", icon: faTabletAlt }
+const activityOverview = [
+    { id: 1, label: "Online visitors", value: 60, color: "secondary", icon: faDesktop },
+    { id: 2, label: "Active carts", value: 30, color: "primary", icon: faMobileAlt },
 ];
 
 const totalOrders = [
@@ -13,6 +12,6 @@ const totalOrders = [
 ];
 
 export {
-    trafficShares,
+    activityOverview,
     totalOrders
 };
