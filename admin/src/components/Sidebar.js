@@ -96,24 +96,28 @@ export default (props = {}) => {
                 <FontAwesomeIcon icon={faTimes} />
               </Nav.Link>
             </div>
-            <Nav className="flex-column pt-3 pt-md-0">
+            <Nav className="flex-column pt-3 pt-md-0 pb-6">
               <NavItem title="Vestashop" link={Routes.Presentation.path} image={ReactHero} />
 
               <Dropdown.Divider className="my-3 border-indigo" />
 
               {/* Vestashop Menu */}
 
+              <NavItem title="Dashboard" link={Routes.DashboardOverview.path} icon={faChartPie} />
+
               <CollapsableNavItem eventKey="tables/" title="Catalog" icon={faTable}>
-                <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
+                <NavItem title="Products" link={Routes.BootstrapTables.path} />
+                <NavItem title="Categories" link={Routes.BootstrapTables.path} />
+                <NavItem title="Attributes & Features" link={Routes.BootstrapTables.path} />
+                <NavItem title="Suppliers" link={Routes.BootstrapTables.path} />
+                <NavItem title="Stock" link={Routes.BootstrapTables.path} />
               </CollapsableNavItem>
 
               <CollapsableNavItem eventKey="tables/" title="Orders" icon={faTable}>
                 <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
               </CollapsableNavItem>
 
-              <CollapsableNavItem eventKey="tables/" title="Customers" icon={faTable}>
-                <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
-              </CollapsableNavItem>
+              <NavItem title="Customers" link={Routes.BootstrapTables.path} icon={faTable}/>
 
               <CollapsableNavItem eventKey="tables/" title="Marketing" icon={faTable}>
                 <NavItem title="Price rules" link={Routes.BootstrapTables.path} />
@@ -124,55 +128,50 @@ export default (props = {}) => {
               </CollapsableNavItem>
 
               <CollapsableNavItem eventKey="tables/" title="Modules" icon={faTable}>
-                <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
+                <NavItem title="Module Manager" link={Routes.BootstrapTables.path} />
+                <NavItem title="Module Catalog" link={Routes.BootstrapTables.path} />
+              </CollapsableNavItem>
+
+              <CollapsableNavItem eventKey="tables/" title="Appearance" icon={faTable}>
+                <NavItem title="Themes" link={Routes.BootstrapTables.path} />
+                <NavItem title="Pages" link={Routes.BootstrapTables.path} />
+                <NavItem title="Image settings" link={Routes.BootstrapTables.path} />
+              </CollapsableNavItem>
+
+              <CollapsableNavItem eventKey="tables/" title="Blog" icon={faTable}>
+                <NavItem title="Posts" link={Routes.BootstrapTables.path} />
+                <NavItem title="Categories" link={Routes.BootstrapTables.path} />
               </CollapsableNavItem>
               
               <CollapsableNavItem eventKey="tables/" title="Localization" icon={faTable}>
                 <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
               </CollapsableNavItem>
 
+              <NavItem title="Shipping methods" link={Routes.BootstrapTables.path}  icon={faTable} />
+
+              <CollapsableNavItem eventKey="tables/" title="Payment" icon={faTable}>
+                <NavItem title="Payment methods" link={Routes.BootstrapTables.path} />
+                <NavItem title="Preferences" link={Routes.BootstrapTables.path} />
+              </CollapsableNavItem>
+
+              <CollapsableNavItem eventKey="tables/" title="Users" icon={faTable}>
+                <NavItem title="Users" link={Routes.BootstrapTables.path} />
+                <NavItem title="Roles" link={Routes.BootstrapTables.path} />
+              </CollapsableNavItem>
+
               <CollapsableNavItem eventKey="tables/" title="Settings" icon={faTable}>
-                <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
-              </CollapsableNavItem>
-
-
-
-              <Dropdown.Divider className="my-3 border-indigo" />
-              
-              <NavItem title="Overview" link={Routes.DashboardOverview.path} icon={faChartPie} />
-              <NavItem title="Transactions" icon={faHandHoldingUsd} link={Routes.Transactions.path} />
-              <NavItem title="Settings" icon={faCog} link={Routes.Settings.path} />
-              <NavItem external title="Map" link="https://demo.themesberg.com/volt-pro-react/#/map" target="_blank" badgeText="Pro" icon={faMapPin} />
-
-              <CollapsableNavItem eventKey="tables/" title="Tables" icon={faTable}>
-                <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
-              </CollapsableNavItem>
-
-              
-              <Dropdown.Divider className="my-3 border-indigo" />
-
-              
-              <CollapsableNavItem eventKey="components/" title="Components" icon={faBoxOpen}>
-                <NavItem title="Accordion" link={Routes.Accordions.path} />
-                <NavItem title="Alerts" link={Routes.Alerts.path} />
-                <NavItem title="Badges" link={Routes.Badges.path} />
-                <NavItem external title="Widgets" link="https://demo.themesberg.com/volt-pro-react/#/components/widgets" target="_blank" badgeText="Pro" />
-                <NavItem title="Breadcrumbs" link={Routes.Breadcrumbs.path} />
-                <NavItem title="Buttons" link={Routes.Buttons.path} />
-                <NavItem title="Forms" link={Routes.Forms.path} />
-                <NavItem title="Modals" link={Routes.Modals.path} />
-                <NavItem title="Navbars" link={Routes.Navbars.path} />
-                <NavItem title="Navs" link={Routes.Navs.path} />
-                <NavItem title="Pagination" link={Routes.Pagination.path} />
-                <NavItem title="Popovers" link={Routes.Popovers.path} />
-                <NavItem title="Progress" link={Routes.Progress.path} />
-                <NavItem title="Tables" link={Routes.Tables.path} />
-                <NavItem title="Tabs" link={Routes.Tabs.path} />
-                <NavItem title="Toasts" link={Routes.Toasts.path} />
-                <NavItem title="Tooltips" link={Routes.Tooltips.path} />
+                <NavItem title="General" link={Routes.BootstrapTables.path} />
+                <NavItem title="Order settings" link={Routes.BootstrapTables.path} />
+                <NavItem title="Product settings" link={Routes.BootstrapTables.path} />
+                <NavItem title="Customer settings" link={Routes.BootstrapTables.path} />
+                <NavItem title="Traffic & SEO" link={Routes.BootstrapTables.path} />
+                <NavItem title="Performance" link={Routes.BootstrapTables.path} />
+                <NavItem title="Logs" link={Routes.BootstrapTables.path} />
+                <NavItem title="Contact" link={Routes.BootstrapTables.path} />
               </CollapsableNavItem>
               
-              <Button as={Link} to={Routes.Upgrade.path} variant="secondary" className="upgrade-to-pro"><FontAwesomeIcon icon={faRocket} className="me-1" /> Upgrade to Pro</Button>
+              
+              <Button as={Link} to={Routes.Upgrade.path} variant="secondary" className="upgrade-to-pro"><FontAwesomeIcon icon={faRocket} className="me-1" /> View store</Button>
             </Nav>
           </div>
         </SimpleBar>
