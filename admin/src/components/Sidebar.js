@@ -106,36 +106,32 @@ export default (props = {}) => {
               <NavItem title="Dashboard" link={Routes.DashboardOverview.path} icon={faChartPie} />
 
               <CollapsableNavItem eventKey="tables/" title="Catalog" icon={faTable}>
-                <NavItem title="Products" link={Routes.BootstrapTables.path} />
-                <NavItem title="Categories" link={Routes.BootstrapTables.path} />
+                <NavItem title="Products" link={Routes.Products.path} />
+                <NavItem title="Categories" link={Routes.ProductCategories.path} />
                 <NavItem title="Attributes & Features" link={Routes.BootstrapTables.path} />
-                <NavItem title="Suppliers" link={Routes.BootstrapTables.path} />
-                <NavItem title="Stock" link={Routes.BootstrapTables.path} />
+                <NavItem title="Suppliers" link={Routes.Suppliers.path} />
+                <NavItem title="Stock" link={Routes.Stock.path} />
               </CollapsableNavItem>
 
               <CollapsableNavItem eventKey="tables/" title="Orders" icon={faTable}>
                 <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
               </CollapsableNavItem>
 
-              <NavItem title="Customers" link={Routes.BootstrapTables.path} icon={faTable}/>
+              <NavItem title="Customers" link={Routes.Customers.path} icon={faTable}/>
 
               <CollapsableNavItem eventKey="tables/" title="Marketing" icon={faTable}>
-                <NavItem title="Price rules" link={Routes.BootstrapTables.path} />
-              </CollapsableNavItem>
-
-              <CollapsableNavItem eventKey="tables/" title="Shipping" icon={faTable}>
-                <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
+                <NavItem title="Price rules" link={Routes.PriceRules.path} />
               </CollapsableNavItem>
 
               <CollapsableNavItem eventKey="tables/" title="Modules" icon={faTable}>
-                <NavItem title="Module Manager" link={Routes.BootstrapTables.path} />
-                <NavItem title="Module Catalog" link={Routes.BootstrapTables.path} />
+                <NavItem title="Module Manager" link={Routes.ModuleManager.path} />
+                <NavItem title="Module Catalog" link={Routes.ModuleCatalog.path} />
               </CollapsableNavItem>
 
               <CollapsableNavItem eventKey="tables/" title="Appearance" icon={faTable}>
-                <NavItem title="Themes" link={Routes.BootstrapTables.path} />
-                <NavItem title="Pages" link={Routes.BootstrapTables.path} />
-                <NavItem title="Image settings" link={Routes.BootstrapTables.path} />
+                <NavItem title="Themes" link={Routes.Themes.path} />
+                <NavItem title="Pages" link={Routes.PageManagement.path} />
+                <NavItem title="Image settings" link={Routes.ImageSettings.path} />
               </CollapsableNavItem>
 
               <CollapsableNavItem eventKey="tables/" title="Blog" icon={faTable}>
@@ -147,16 +143,16 @@ export default (props = {}) => {
                 <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
               </CollapsableNavItem>
 
-              <NavItem title="Shipping methods" link={Routes.BootstrapTables.path}  icon={faTable} />
+              <NavItem title="Shipping methods" link={Routes.Shipping.path}  icon={faTable} />
 
               <CollapsableNavItem eventKey="tables/" title="Payment" icon={faTable}>
-                <NavItem title="Payment methods" link={Routes.BootstrapTables.path} />
-                <NavItem title="Preferences" link={Routes.BootstrapTables.path} />
+                <NavItem title="Payment methods" link={Routes.PaymentMethods.path} />
+                <NavItem title="Preferences" link={Routes.PaymentPreferences.path} />
               </CollapsableNavItem>
 
               <CollapsableNavItem eventKey="tables/" title="Users" icon={faTable}>
-                <NavItem title="Users" link={Routes.BootstrapTables.path} />
-                <NavItem title="Roles" link={Routes.BootstrapTables.path} />
+                <NavItem title="Users" link={Routes.User.path} />
+                <NavItem title="Roles" link={Routes.Roles.path} />
               </CollapsableNavItem>
 
               <CollapsableNavItem eventKey="tables/" title="Settings" icon={faTable}>

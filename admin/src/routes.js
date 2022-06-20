@@ -2,9 +2,9 @@
 export const Routes = {
     // pages
     Presentation: { path: "/" },
-    DashboardOverview: { path: "/dashboard/overview" },
+    DashboardOverview: { path: "/admin/dashboard" },
     Transactions: { path: "/transactions" },
-    Settings: { path: "/settings" },
+    Settings: { path: "/admin/settings" },
     Upgrade: { path: "/upgrade" },
     BootstrapTables: { path: "/tables/bootstrap-tables" },
     Billing: { path: "/examples/billing" },
@@ -44,5 +44,25 @@ export const Routes = {
     Tabs: { path: "/components/tabs" },
     Tooltips: { path: "/components/tooltips" },
     Toasts: { path: "/components/toasts" },
-    WidgetsComponent: { path: "/components/widgets" }
+    WidgetsComponent: { path: "/components/widgets" },
+
+    //Vestashop paths
+    Products: { path: "/admin/products"},
+    ProductCategories: { path: "/admin/product-categories"},
+    Customers: { path: "/admin/customers"},
+    ImageSettings: { path: "/admin/image-settings"},
+    ModuleCatalog: { path: "/admin/module-catalog"},
+    ModuleManager: { path: "/admin/module-manager"},
+    PageManagement: { path: "/admin/page-management"},
+    PaymentMethods: { path: "/admin/payment-methods"},
+    PaymentPreferences: { path: "/admin/payment-preferences"},
+    PostCategories: { path: "/admin/post-categories"},
+    Posts: { path: "/admin/posts"},
+    PriceRules: { path: "/admin/price-rules"},
+    Roles: { path: "/admin/roles"},
+    Shipping: { path: "/admin/shipping"},
+    Stock: { path: "/admin/stock"},
+    Suppliers: { path: "/admin/suppliers"},
+    Themes: { path: "/admin/themes"},
+    User: { path: "/admin/users"}
 };

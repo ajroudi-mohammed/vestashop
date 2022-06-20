@@ -4,7 +4,6 @@ import { Routes } from "../routes";
 
 // pages
 import Presentation from "./Presentation";
-import Upgrade from "./Upgrade";
 import DashboardOverview from "./dashboard/DashboardOverview";
 import Transactions from "./Transactions";
 import Settings from "./Settings";
@@ -17,14 +16,7 @@ import Lock from "./examples/Lock";
 import NotFoundPage from "./examples/NotFound";
 import ServerError from "./examples/ServerError";
 
-// documentation pages
-import DocsOverview from "./documentation/DocsOverview";
-import DocsDownload from "./documentation/DocsDownload";
-import DocsQuickStart from "./documentation/DocsQuickStart";
-import DocsLicense from "./documentation/DocsLicense";
-import DocsFolderStructure from "./documentation/DocsFolderStructure";
-import DocsBuild from "./documentation/DocsBuild";
-import DocsChangelog from "./documentation/DocsChangelog";
+
 
 // components
 import Sidebar from "../components/Sidebar";
@@ -32,22 +24,25 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
 
-import Accordion from "./components/Accordion";
-import Alerts from "./components/Alerts";
-import Badges from "./components/Badges";
-import Breadcrumbs from "./components/Breadcrumbs";
-import Buttons from "./components/Buttons";
-import Forms from "./components/Forms";
-import Modals from "./components/Modals";
-import Navs from "./components/Navs";
-import Navbars from "./components/Navbars";
-import Pagination from "./components/Pagination";
-import Popovers from "./components/Popovers";
-import Progress from "./components/Progress";
-import Tables from "./components/Tables";
-import Tabs from "./components/Tabs";
-import Tooltips from "./components/Tooltips";
-import Toasts from "./components/Toasts";
+//Vestashop pages
+import Products from './ProductsPage';
+import ProductCategories from './CategoriesPage';
+import Customers from './CustomersPage';
+import ImageSettings from './ImageSettingsPage';
+import ModuleCatalog from './ModuleCatalogPage';
+import ModuleManager from './ModuleManagerPage';
+import PageManagement from './PageManagementPage';
+import PaymentMethods from './PaymentMethodsPage';
+import PaymentPreferences from './PaymentPreferencesPage';
+import PostCategories from './PostsCategoriesPage';
+import Posts from './PostsPage';
+import PriceRules from './PriceRulesPage';
+import Roles from './RolesPage';
+import Shipping from './ShippingPage';
+import Stock from './StockPage';
+import Suppliers from './SuppliersPage';
+import Themes from './ThemesPage';
+import User from './UsersPage';
 
 const RouteWithLoader = ({ component: Component, ...rest }) => {
   const [loaded, setLoaded] = useState(false);
@@ -111,37 +106,30 @@ export default () => (
 
     {/* pages */}
     <RouteWithSidebar exact path={Routes.DashboardOverview.path} component={DashboardOverview} />
-    <RouteWithSidebar exact path={Routes.Upgrade.path} component={Upgrade} />
     <RouteWithSidebar exact path={Routes.Transactions.path} component={Transactions} />
     <RouteWithSidebar exact path={Routes.Settings.path} component={Settings} />
     <RouteWithSidebar exact path={Routes.BootstrapTables.path} component={BootstrapTables} />
 
-    {/* components */}
-    <RouteWithSidebar exact path={Routes.Accordions.path} component={Accordion} />
-    <RouteWithSidebar exact path={Routes.Alerts.path} component={Alerts} />
-    <RouteWithSidebar exact path={Routes.Badges.path} component={Badges} />
-    <RouteWithSidebar exact path={Routes.Breadcrumbs.path} component={Breadcrumbs} />
-    <RouteWithSidebar exact path={Routes.Buttons.path} component={Buttons} />
-    <RouteWithSidebar exact path={Routes.Forms.path} component={Forms} />
-    <RouteWithSidebar exact path={Routes.Modals.path} component={Modals} />
-    <RouteWithSidebar exact path={Routes.Navs.path} component={Navs} />
-    <RouteWithSidebar exact path={Routes.Navbars.path} component={Navbars} />
-    <RouteWithSidebar exact path={Routes.Pagination.path} component={Pagination} />
-    <RouteWithSidebar exact path={Routes.Popovers.path} component={Popovers} />
-    <RouteWithSidebar exact path={Routes.Progress.path} component={Progress} />
-    <RouteWithSidebar exact path={Routes.Tables.path} component={Tables} />
-    <RouteWithSidebar exact path={Routes.Tabs.path} component={Tabs} />
-    <RouteWithSidebar exact path={Routes.Tooltips.path} component={Tooltips} />
-    <RouteWithSidebar exact path={Routes.Toasts.path} component={Toasts} />
-
-    {/* documentation */}
-    <RouteWithSidebar exact path={Routes.DocsOverview.path} component={DocsOverview} />
-    <RouteWithSidebar exact path={Routes.DocsDownload.path} component={DocsDownload} />
-    <RouteWithSidebar exact path={Routes.DocsQuickStart.path} component={DocsQuickStart} />
-    <RouteWithSidebar exact path={Routes.DocsLicense.path} component={DocsLicense} />
-    <RouteWithSidebar exact path={Routes.DocsFolderStructure.path} component={DocsFolderStructure} />
-    <RouteWithSidebar exact path={Routes.DocsBuild.path} component={DocsBuild} />
-    <RouteWithSidebar exact path={Routes.DocsChangelog.path} component={DocsChangelog} />
+    
+    {/* Vestashop pages */}
+    <RouteWithSidebar exact path={Routes.Products.path} component={Products} />
+    <RouteWithSidebar exact path={Routes.ProductCategories.path} component={ProductCategories} />
+    <RouteWithSidebar exact path={Routes.Customers.path} component={Customers} />
+    <RouteWithSidebar exact path={Routes.ImageSettings.path} component={ImageSettings} />
+    <RouteWithSidebar exact path={Routes.ModuleCatalog.path} component={ModuleCatalog} />
+    <RouteWithSidebar exact path={Routes.ModuleManager.path} component={ModuleManager} />
+    <RouteWithSidebar exact path={Routes.PageManagement.path} component={PageManagement} />
+    <RouteWithSidebar exact path={Routes.PaymentMethods.path} component={PaymentMethods} />
+    <RouteWithSidebar exact path={Routes.PaymentPreferences.path} component={PaymentPreferences} />
+    <RouteWithSidebar exact path={Routes.PostCategories.path} component={PostCategories} />
+    <RouteWithSidebar exact path={Routes.Posts.path} component={Posts} />
+    <RouteWithSidebar exact path={Routes.PriceRules.path} component={PriceRules} />
+    <RouteWithSidebar exact path={Routes.Roles.path} component={Roles} />
+    <RouteWithSidebar exact path={Routes.Shipping.path} component={Shipping} />
+    <RouteWithSidebar exact path={Routes.Stock.path} component={Stock} />
+    <RouteWithSidebar exact path={Routes.Suppliers.path} component={Suppliers} />
+    <RouteWithSidebar exact path={Routes.Themes.path} component={Themes} />
+    <RouteWithSidebar exact path={Routes.User.path} component={User} />
 
     <Redirect to={Routes.NotFound.path} />
   </Switch>
