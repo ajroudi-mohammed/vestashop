@@ -15,6 +15,8 @@ import {
 import { Col, Row, Button, Dropdown } from '@themesberg/react-bootstrap';
 import { GeneralInfoForm } from '../components/Forms';
 import ProductList from '../components/ProductListComponent';
+import { Link } from 'react-router-dom';
+import { Routes } from '../routes';
 
 import Profile3 from '../assets/img/team/profile-picture-3.jpg';
 
@@ -38,7 +40,7 @@ export default () => {
             <Dropdown.Item>
               <FontAwesomeIcon icon={faCommentDots} className="me-2" /> Message
             </Dropdown.Item>
-            <Dropdown.Item>
+            <Dropdown.Item as={Link} to={Routes.Invoice.path}>
               <FontAwesomeIcon icon={faBoxOpen} className="me-2" /> Product
             </Dropdown.Item>
 
